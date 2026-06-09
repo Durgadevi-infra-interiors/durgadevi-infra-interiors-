@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Create Account | Durgadevi Infra & Interiors</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="auth-page">
+
+<div class="auth-box">
+
+<img src="images/image.jpeg"
+class="auth-logo"
+alt="Company Logo">
+
+<h1>Create Account</h1>
+
+<p>
+Register to access Durgadevi Infra & Interiors
+services, project consultations, and customer support.
+</p>
+
+<form id="registerForm">
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+id="regEmail"
+placeholder="Email Address"
+required>
+
+<input
+type="tel"
+placeholder="Mobile Number"
+required>
+
+<input
+type="password"
+id="regPassword"
+placeholder="Create Password"
+pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&]).{8,}"
+title="Minimum 8 characters, including uppercase, lowercase, number and special character"
+required>
+
+<input
+type="password"
+placeholder="Confirm Password"
+required>
+
+<div class="requirements">
+
+<h3>Registration Requirements</h3>
+
+<ul>
+<li>Valid email address required.</li>
+<li>Mobile number must be active.</li>
+<li>Password must contain at least 8 characters.</li>
+<li>Include uppercase, lowercase, number and special character.</li>
+<li>Information provided must be accurate and complete.</li>
+</ul>
+
+</div>
+
+<label class="terms-check">
+
+<input type="checkbox" required>
+
+I agree to the Terms & Conditions and Privacy Policy.
+
+</label>
+
+<button type="submit">
+
+Create Account
+
+</button>
+
+</form>
+
+<div class="security-note">
+
+🔒 Your information is securely stored and used only
+for project communication and account management.
+
+</div>
+
+<div class="auth-footer">
+
+Already have an account?
+
+<a href="login.html">
+Sign In
+</a>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

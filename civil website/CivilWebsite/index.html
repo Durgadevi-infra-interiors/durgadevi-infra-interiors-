@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Durgadevi Infra & Interiors</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo-container">
+
+<a href="index.html">
+<img src="images/image.jpeg" alt="Logo" class="logo">
+</a>
+
+<h2>DURGADEVI INFRA & INTERIORS</h2>
+
+</div>
+
+<nav>
+
+<ul class="nav-links">
+
+<li><a class="active" href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="projects.html">Projects</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li>
+<button onclick="logoutUser()" class="logout-btn">
+Logout
+</button>
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div class="hero-content">
+<h1>Durgadevi<br>
+    Infra & Interiors
+</h1>
+<h2>Building Dreams Into Reality</h2>
+
+<p>
+Professional Construction, Architecture &
+Interior Solutions Across Karnataka.
+</p>
+
+<a href="contact.html" class="btn">
+Get Free Consultation
+</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about-home">
+
+<h2 class="section-title">
+About Us
+</h2>
+
+<p>
+Durgadevi Infra & Interiors is a civil construction,
+architecture and interior solutions company delivering
+residential, commercial and turnkey projects with
+quality workmanship and professional execution.
+</p>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services-home">
+
+<h2 class="section-title">
+Our Services
+</h2>
+
+<div class="service-grid">
+
+<div class="service-card">🏗 Construction</div>
+
+<div class="service-card">📐 Architecture</div>
+
+<div class="service-card">💻 2D & 3D Design</div>
+
+<div class="service-card">🛋 Interiors</div>
+
+<div class="service-card">🍽 Modular Kitchen</div>
+
+<div class="service-card">🔑 Turnkey Projects</div>
+
+</div>
+
+</section>
+
+<!-- COUNTERS -->
+
+<section class="counter-section">
+
+<div class="counter-box">
+<h2 class="counter" data-target="100">0</h2>
+<p>Projects Completed</p>
+</div>
+
+<div class="counter-box">
+<h2 class="counter" data-target="50">0</h2>
+<p>Happy Clients</p>
+</div>
+
+<div class="counter-box">
+<h2 class="counter" data-target="10">0</h2>
+<p>Years Experience</p>
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section class="projects-home">
+
+<h2 class="section-title">
+Featured Projects
+</h2>
+
+<section class="project-grid">
+
+<div class="project-grid">
+
+<div class="project-card">
+<img src="images/goal.webp" alt="Goal International School">
+
+<h3>Goal International School, Manki, Uttara Kannada</h3>
+</div>
+
+<div class="project-card">
+
+<img src="images/banner1.webp" alt="BTR Supermarket">
+
+<h3>BTR Supermarket, Manki, Uttara Kannada</h3>
+
+</div>
+
+<div class="project-card">
+
+<img src="images/banner2.webp" alt="Government First Grade College">
+
+<h3>Government First Grade College, Honnavar</h3>
+
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT CTA -->
+
+<section class="cta">
+
+<h2>
+Ready To Start Your Project?
+</h2>
+
+<p>
+Contact us today for planning,
+design and execution.
+</p>
+
+<a href="contact.html" class="btn">
+Contact Now
+</a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>DURGADEVI INFRA & INTERIORS</h3>
+
+<p>
+Construction | Architecture | Interior Solutions
+</p>
+
+<p>
+"We Build Trust Along With Homes."
+</p>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+<!-- WHATSAPP -->
+
+<a href="https://wa.me/919731375667" class="whatsapp">
+💬
+</a>
+
+<script src="script.js"></script>
+
+<script>
+
+// LOGIN PROTECTION
+
+if(localStorage.getItem("loggedIn") !== "true"){
+
+window.location.href = "login.html";
+
+}
+
+// LOGOUT
+
+function logoutUser(){
+
+localStorage.removeItem("loggedIn");
+
+alert("Logged Out Successfully");
+
+window.location.href = "login.html";
+
+}
+
+</script>
+
+</body>
+</html>
