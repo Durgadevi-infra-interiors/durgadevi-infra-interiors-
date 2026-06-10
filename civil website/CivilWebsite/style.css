@@ -1083,3 +1083,85 @@ line-height:1.6;
 width:auto;
 margin-right:8px;
 }
+
+/* =========================
+   MOBILE HERO FIX
+   ========================= */
+
+@media screen and (max-width: 768px){
+
+    header{
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .hero{
+        padding-top: 220px; /* pushes content below header */
+        min-height: 100vh;
+    }
+
+    .hero-content{
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .hero-content h1{
+        font-size: 38px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .hero-content h2{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .hero-content p{
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .logo{
+        width: 65px;
+        height: 65px;
+    }
+
+    .logo-container h2{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .project-grid,
+    .service-grid,
+    .counter-section{
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Extra Small Phones */
+
+@media screen and (max-width: 480px){
+
+    .hero{
+        padding-top: 250px;
+    }
+
+    .hero-content h1{
+        font-size: 30px;
+    }
+
+    .hero-content h2{
+        font-size: 18px;
+    }
+
+    .hero-content p{
+        font-size: 14px;
+    }
+}
