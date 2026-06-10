@@ -508,33 +508,6 @@ transform:translateY(0);
 
 }
 
-/* ==========================
-   RESPONSIVE
-========================== */
-
-@media(max-width:768px){
-
-header{
-flex-direction:column;
-height:auto;
-padding:20px;
-}
-
-.nav-links{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.hero h1{
-font-size:40px;
-}
-
-.section-title{
-font-size:35px;
-}
-
-}
-
 /* SCROLL ANIMATION */
 
 .service-card,
